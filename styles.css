@@ -637,8 +637,10 @@ a {
 
 @media (max-width: 700px) {
   .site {
-    width: min(calc(100% - 28px), var(--max-width));
-  }
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
   .site-header {
     align-items: flex-start;
