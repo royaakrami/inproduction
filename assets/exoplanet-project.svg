@@ -1,0 +1,9 @@
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#f4f4f1"/>
+  <rect x="38" y="38" width="1124" height="824" rx="28" fill="none" stroke="#c9c9c5" stroke-width="3"/>
+  <circle cx="600.0" cy="315.0" r="100" fill="#dff4d2"/>
+  <text x="50%" y="62%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" fill="#202020">Exoplanet Research</text>
+  <text x="50%" y="70%" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#666666">Use a transit figure or model image</text>
+</svg>
+```
