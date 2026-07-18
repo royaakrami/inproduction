@@ -43,8 +43,11 @@ a {
 }
 
 .site {
-  width: min(calc(100% - 48px), var(--max-width));
+  width: 100%;
+  max-width: 1450px;
   margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .site-header {
