@@ -1,70 +1,76 @@
-```html
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Roya Akrami — electrical engineering, research, machine learning, and scientific computing.">
+  <meta name="description" content="Roya Akrami — electrical engineering, research, machine learning, scientific computing, biomechanics, and space science.">
   <title>Roya Akrami</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="site">
+    <header class="site-header">
+      <a class="logo-dots" href="index.html" aria-label="Roya Akrami home">
+        <span></span><span></span><span></span><span></span><span></span>
+      </a>
 
-<header class="site-header">
-  <a class="logo-dots" href="index.html" aria-label="Roya Akrami home">
-    <span></span><span></span><span></span><span></span><span></span>
-  </a>
-
-  <nav class="nav" aria-label="Main navigation">
-    <a href="about.html" >About</a>
-    <a href="projects.html" >Projects</a>
-    <a href="awards.html" >Awards</a>
-    <a href="cv.html" >CV</a>
-    <a class="contact-link" href="mailto:YOUR-EMAIL">Get in touch</a>
-  </nav>
-</header>
-
+      <nav class="nav" aria-label="Main navigation">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="awards.html">Awards</a>
+        <a href="cv.html">CV</a>
+        <a class="contact-link" href="mailto:roya_akrami@mines.edu">Get in touch</a>
+      </nav>
+    </header>
 
     <main>
       <section class="hero">
         <div class="hero-copy">
+          <p class="eyebrow">Electrical Engineering · Colorado School of Mines · Class of 2027</p>
           <h1>
             I build technical tools for
             <em>scientific questions</em>,
             with a focus on <strong>machine learning</strong>,
-            <span class="highlight-word">movement</span>,
+            <span class="highlight-word">signal analysis</span>,
             and space.
           </h1>
 
           <p class="hero-intro">
-            I am an electrical engineering student working across biomechanics,
-            signal processing, scientific computing, and research-driven machine learning.
+            My research has moved across NASA heliophysics, exoplanet detection,
+            biomechanics, spectroscopy, robotics, and embedded systems—with a common
+            focus on turning difficult scientific data into usable models and tools.
           </p>
 
           <div class="identity">
             <strong>Roya Akrami</strong>
-            <span>Electrical Engineering @ Colorado School of Mines</span>
+            <span>B.S. Electrical Engineering · Graduating May 2027</span>
 
             <div class="social-row">
+              <a href="mailto:roya_akrami@mines.edu">Email</a>
+              <a href="cv.html">CV</a>
+              <!-- Replace these two placeholders when you want to add your profiles. -->
               <a href="https://github.com/YOUR-USERNAME">GitHub</a>
               <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
-              <a href="mailto:YOUR-EMAIL">Email</a>
             </div>
           </div>
         </div>
 
         <aside class="hero-visual">
           <article class="photo-card">
-            <img src="assets/profile-placeholder.svg" alt="Replace with a photograph of Roya Akrami">
+            <div class="photo-slot portrait-photo" style="--photo: url('assets/photos/profile.jpg');">
+              <div class="photo-slot-label">
+                <strong>Profile photo</strong>
+                <span>assets/photos/profile.jpg</span>
+              </div>
+            </div>
             <div class="photo-caption">
               <strong>Currently</strong>
-              <p>Researching wearable gait analysis and foot placement at ETH Zürich.</p>
+              <p>Research Assistant at NASA Jet Propulsion Laboratory, working on exoplanet and solar-flare machine-learning workflows.</p>
             </div>
           </article>
 
           <a class="scroll-pill" href="#accomplishments">
-            Scroll past the introduction
+            Scroll through my work
             <span aria-hidden="true">↓</span>
           </a>
         </aside>
@@ -73,82 +79,101 @@
       <section class="section" id="accomplishments">
         <div class="section-heading">
           <h2>Selected accomplishments</h2>
-          <p>
-            Research, scholarships, presentations, and leadership that shaped
-            the direction of my work.
-          </p>
+          <p>Research, scholarships, presentations, and leadership that shaped the direction of my work.</p>
         </div>
 
-        <div class="cards">
+        <div class="cards accomplishment-grid">
           <article class="accomplishment-card">
             <span class="card-kicker">International research</span>
             <h3>ThinkSwiss Research Scholar</h3>
-            <p>Selected for a 2026 research placement at ETH Zürich.</p>
+            <p>Awarded $7,000 to conduct movement-biomechanics research at ETH Zürich in Summer 2026.</p>
+          </article>
+
+          <article class="accomplishment-card">
+            <span class="card-kicker">NASA-funded research</span>
+            <h3>NASA / USRA Research Award</h3>
+            <p>Awarded approximately $10,000 for undergraduate research in Spring 2025.</p>
           </article>
 
           <article class="accomplishment-card">
             <span class="card-kicker">Research presentation</span>
-            <h3>Undergraduate Symposium Award</h3>
-            <p>Third place for an oral presentation on VCD spectroscopy research.</p>
+            <h3>3rd Place · Undergraduate Symposium</h3>
+            <p>Placed third for a 12-minute oral presentation on vibrational circular dichroism research.</p>
           </article>
 
           <article class="accomplishment-card">
             <span class="card-kicker">Leadership</span>
-            <h3>Founder of SWiR</h3>
-            <p>Founded and led the Society of Women in Research.</p>
+            <h3>Founder & President of SWiR</h3>
+            <p>Founded the Society of Women in Research to connect students with research opportunities and funding resources.</p>
           </article>
         </div>
 
         <p class="accomplishments-note">
-          My work has moved between spectroscopy, robotics, heliophysics,
-          exoplanets, and movement biomechanics—but the common thread is using
-          engineering to make difficult data more understandable.
+          I have worked in university labs, NASA research groups, and an international biomechanics lab,
+          while keeping the same core interest: using engineering to make complex data easier to understand,
+          validate, and use.
         </p>
       </section>
 
       <section class="section" id="projects">
         <div class="section-heading">
           <h2>Selected projects</h2>
-          <p>
-            Use the arrows or swipe horizontally. Each project can later link
-            to a full case-study page.
-          </p>
+          <p>Use the arrows or swipe horizontally. Each card links to a longer project description.</p>
         </div>
 
         <div class="project-slider">
           <div class="project-track" data-project-track>
             <article class="project-card">
-              <img src="assets/gait-project.svg" alt="Foot placement and gait project placeholder">
-              <div class="project-card-content">
-                <h3>Foot Placement and Gait Stability</h3>
-                <p>Motion-capture and wearable-sensor analysis at ETH Zürich.</p>
-                <a href="projects.html#foot-placement">View project →</a>
+              <div class="photo-slot project-photo" style="--photo: url('assets/photos/exoplanet.jpg');">
+                <div class="photo-slot-label"><strong>Exoplanet photo / figure</strong><span>assets/photos/exoplanet.jpg</span></div>
               </div>
-            </article>
-
-            <article class="project-card">
-              <img src="assets/exoplanet-project.svg" alt="Exoplanet transit project placeholder">
               <div class="project-card-content">
-                <h3>Exoplanet Transit Detection</h3>
-                <p>Machine-learning detection of structured features in transit residuals.</p>
+                <h3>Exoplanet Transit Anomaly Detection</h3>
+                <p>1D convolutional neural network for identifying anomalous transit signals in noisy light-curve data at NASA JPL.</p>
                 <a href="projects.html#exoplanet">View project →</a>
               </div>
             </article>
 
             <article class="project-card">
-              <img src="assets/heliophysics-project.svg" alt="Heliophysics project placeholder">
+              <div class="photo-slot project-photo" style="--photo: url('assets/photos/gait.jpg');">
+                <div class="photo-slot-label"><strong>ETH / gait photo</strong><span>assets/photos/gait.jpg</span></div>
+              </div>
               <div class="project-card-content">
-                <h3>Heliophysics Regression Model</h3>
-                <p>A neural-network model for exospheric Lyman-alpha emission.</p>
+                <h3>Foot Placement and Gait Stability</h3>
+                <p>MATLAB modeling pipeline using wearable IMU data to estimate foot placement and evaluate gait stability.</p>
+                <a href="projects.html#foot-placement">View project →</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="photo-slot project-photo" style="--photo: url('assets/photos/heliophysics.jpg');">
+                <div class="photo-slot-label"><strong>Heliophysics figure</strong><span>assets/photos/heliophysics.jpg</span></div>
+              </div>
+              <div class="project-card-content">
+                <h3>Exospheric Lyman-alpha Mapping</h3>
+                <p>28-layer residual neural network for modeling H-Lyman-alpha emission patterns for future exospheric mapping.</p>
                 <a href="projects.html#heliophysics">View project →</a>
               </div>
             </article>
 
             <article class="project-card">
-              <img src="assets/lidar-project.svg" alt="LiDAR rover project placeholder">
+              <div class="photo-slot project-photo" style="--photo: url('assets/photos/vcd.jpg');">
+                <div class="photo-slot-label"><strong>VCD lab photo</strong><span>assets/photos/vcd.jpg</span></div>
+              </div>
+              <div class="project-card-content">
+                <h3>VCD Spectroscopy Research</h3>
+                <p>Biomedical spectroscopy research, technical figures, literature work, and optical-system research.</p>
+                <a href="projects.html#vcd">View project →</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="photo-slot project-photo" style="--photo: url('assets/photos/lidar.jpg');">
+                <div class="photo-slot-label"><strong>LiDAR rover photo</strong><span>assets/photos/lidar.jpg</span></div>
+              </div>
               <div class="project-card-content">
                 <h3>LiDAR Mapping Rover</h3>
-                <p>Environmental mapping with ROS 2, RViz, Linux, and LiDAR.</p>
+                <p>2D environmental mapping on a LattePanda using Ubuntu, ROS, RViz, and LiDAR.</p>
                 <a href="projects.html#lidar">View project →</a>
               </div>
             </article>
@@ -164,118 +189,31 @@
       <section class="section" id="timeline">
         <div class="section-heading">
           <h2>Journey so far</h2>
-          <p>
-            This is the long timeline section that appears after scrolling
-            through the main portfolio content.
-          </p>
+          <p>A research timeline from early spectroscopy work through current NASA JPL research.</p>
         </div>
 
         <div class="timeline">
-
-    <div class="timeline-row">
-      <div class="timeline-content">
-        <span class="timeline-icon">🧪</span>
-        <span class="timeline-title">VCD Spectroscopy Research</span>
-        <span class="timeline-subtitle">Biomedical spectroscopy and optical systems</span>
-      </div>
-      <div class="timeline-line"></div>
-      <div class="timeline-date">2023 — 2024</div>
-    </div>
-
-
-    <div class="timeline-row">
-      <div class="timeline-content">
-        <span class="timeline-icon">🏆</span>
-        <span class="timeline-title">Undergraduate Research Symposium</span>
-        <span class="timeline-subtitle">Third place oral presentation</span>
-      </div>
-      <div class="timeline-line"></div>
-      <div class="timeline-date">Spring 2024</div>
-    </div>
-
-
-    <div class="timeline-row">
-      <div class="timeline-content">
-        <span class="timeline-icon">🛰️</span>
-        <span class="timeline-title">LiDAR Mapping Rover</span>
-        <span class="timeline-subtitle">ROS 2, RViz, Linux, and mobile robotics</span>
-      </div>
-      <div class="timeline-line"></div>
-      <div class="timeline-date">Summer 2024</div>
-    </div>
-
-
-    <div class="timeline-row">
-      <div class="timeline-content">
-        <span class="timeline-icon">☀️</span>
-        <span class="timeline-title">Heliophysics Machine Learning</span>
-        <span class="timeline-subtitle">Exospheric Lyman-alpha regression model</span>
-      </div>
-      <div class="timeline-line"></div>
-      <div class="timeline-date">2024 — 2025</div>
-    </div>
-
-
-    <div class="timeline-row">
-      <div class="timeline-content">
-        <span class="timeline-icon">🎤</span>
-        <span class="timeline-title">AGU Poster Presentation</span>
-        <span class="timeline-subtitle">Machine learning for heliophysics</span>
-      </div>
-      <div class="timeline-line"></div>
-      <div class="timeline-date">Dec 2025</div>
-    </div>
-
-
-    <div class="timeline-row">
-      <div class="timeline-content">
-        <span class="timeline-icon">🔭</span>
-        <span class="timeline-title">Exoplanet Machine Learning</span>
-        <span class="timeline-subtitle">Transit residual and anomaly detection</span>
-      </div>
-      <div class="timeline-line"></div>
-      <div class="timeline-date">2026 — Now<span class="current-dot"></span></div>
-    </div>
-
-
-    <div class="timeline-row">
-      <div class="timeline-content">
-        <span class="timeline-icon">🇨🇭</span>
-        <span class="timeline-title">ThinkSwiss Research Scholar</span>
-        <span class="timeline-subtitle">Movement biomechanics at ETH Zürich</span>
-      </div>
-      <div class="timeline-line"></div>
-      <div class="timeline-date">May 2026 — Now<span class="current-dot"></span></div>
-    </div>
-
-
-    <div class="timeline-row">
-      <div class="timeline-content">
-        <span class="timeline-icon">🦿</span>
-        <span class="timeline-title">Wearable Gait Research</span>
-        <span class="timeline-subtitle">Foot placement and IMU analysis</span>
-      </div>
-      <div class="timeline-line"></div>
-      <div class="timeline-date">Summer 2026</div>
-    </div>
-
+          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🧪</span><span class="timeline-title">Phal Lab Research</span><span class="timeline-subtitle">VCD spectroscopy, lab website, and LiDAR mapping</span></div><div class="timeline-line"></div><div class="timeline-date">Oct 2023 — Oct 2025</div></div>
+          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🏆</span><span class="timeline-title">Undergraduate Research Symposium</span><span class="timeline-subtitle">Third-place oral presentation</span></div><div class="timeline-line"></div><div class="timeline-date">Apr 2024</div></div>
+          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🛰️</span><span class="timeline-title">LiDAR Mapping Rover</span><span class="timeline-subtitle">ROS, RViz, Ubuntu, and mobile mapping</span></div><div class="timeline-line"></div><div class="timeline-date">Summer 2024</div></div>
+          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">☀️</span><span class="timeline-title">NASA Goddard Research</span><span class="timeline-subtitle">Exospheric H-Lyman-alpha modeling with a 28-layer ResNet</span></div><div class="timeline-line"></div><div class="timeline-date">Mar 2025 — Feb 2026</div></div>
+          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🎤</span><span class="timeline-title">AGU 2025</span><span class="timeline-subtitle">Presented heliophysics machine-learning research</span></div><div class="timeline-line"></div><div class="timeline-date">Dec 2025</div></div>
+          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🔭</span><span class="timeline-title">NASA JPL Research</span><span class="timeline-subtitle">Exoplanet anomaly detection and solar-flare error categorization</span></div><div class="timeline-line"></div><div class="timeline-date">Feb 2026 — Now<span class="current-dot"></span></div></div>
+          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🇨🇭</span><span class="timeline-title">ETH Zürich Research</span><span class="timeline-subtitle">Wearable IMUs, foot placement, and gait stability</span></div><div class="timeline-line"></div><div class="timeline-date">May — Aug 2026</div></div>
         </div>
       </section>
     </main>
 
-
-<footer class="site-footer">
-  <span>© 2026 Roya Akrami</span>
-  <div class="footer-links">
-    <a href="https://github.com/YOUR-USERNAME">GitHub</a>
-    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
-    <a href="mailto:YOUR-EMAIL">Email</a>
+    <footer class="site-footer">
+      <span>© 2026 Roya Akrami</span>
+      <div class="footer-links">
+        <a href="mailto:roya_akrami@mines.edu">Email</a>
+        <a href="cv.html">CV</a>
+        <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+      </div>
+    </footer>
   </div>
-</footer>
-
-  </div>
-
   <script src="script.js"></script>
 </body>
 </html>
-```
