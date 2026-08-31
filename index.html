@@ -3,217 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Roya Akrami — electrical engineering, research, machine learning, scientific computing, biomechanics, and space science.">
+  <meta name="description" content="Roya Akrami — electrical engineering, research, machine learning, biomechanics, and space science.">
   <title>Roya Akrami</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <div class="site">
-    <header class="site-header">
-      <a class="logo-dots" href="index.html" aria-label="Roya Akrami home">
-        <span></span><span></span><span></span><span></span><span></span>
-      </a>
+<body class="home-page" data-page="home">
+  <main class="bubble-home" aria-label="Roya Akrami portfolio">
+    <div class="home-note">pick a bubble</div>
 
-      <nav class="nav" aria-label="Main navigation">
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="awards.html">Awards</a>
-        <a href="cv.html">CV</a>
-        <a class="contact-link" href="mailto:roya_akrami@mines.edu">Get in touch</a>
-      </nav>
-    </header>
+    <div class="bubble name-bubble bubble-lavender" aria-label="Roya Akrami">
+      <span>Roya<br><strong>Akrami</strong></span>
+    </div>
 
-    <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Electrical Engineering · Colorado School of Mines · Class of 2027</p>
-          <h1>
-            I build technical tools for
-            <em>scientific questions</em>,
-            with a focus on <strong>machine learning</strong>,
-            <span class="highlight-word">signal analysis</span>,
-            and space.
-          </h1>
+    <a class="bubble bubble-link home-nav about-bubble bubble-sage" href="about.html" data-drift="1">
+      <span>about</span>
+    </a>
 
-          <p class="hero-intro">
-            My research has moved across NASA heliophysics, exoplanet detection,
-            biomechanics, spectroscopy, robotics, and embedded systems—with a common
-            focus on turning difficult scientific data into usable models and tools.
-          </p>
+    <a class="bubble bubble-link home-nav projects-bubble bubble-sage" href="projects.html" data-drift="2">
+      <span>projects</span>
+    </a>
 
-          <div class="identity">
-            <strong>Roya Akrami</strong>
-            <span>B.S. Electrical Engineering · Graduating May 2027</span>
+    <a class="bubble bubble-link home-nav awards-bubble bubble-lavender-light" href="awards.html" data-drift="3">
+      <span>awards</span>
+    </a>
 
-            <div class="social-row">
-              <a href="mailto:roya_akrami@mines.edu">Email</a>
-              <a href="cv.html">CV</a>
-              <!-- Replace these two placeholders when you want to add your profiles. -->
-              <a href="https://github.com/YOUR-USERNAME">GitHub</a>
-              <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
-            </div>
-          </div>
-        </div>
+    <a class="bubble bubble-link home-nav cv-bubble bubble-lavender-light" href="cv.html" data-drift="4">
+      <span>cv</span>
+    </a>
 
-        <aside class="hero-visual">
-          <article class="photo-card">
-            <div class="photo-slot portrait-photo" style="--photo: url('assets/photos/profile.jpg');">
-              <div class="photo-slot-label">
-                <strong>Profile photo</strong>
-                <span>assets/photos/profile.jpg</span>
-              </div>
-            </div>
-            <div class="photo-caption">
-              <strong>Currently</strong>
-              <p>Research Assistant at NASA Jet Propulsion Laboratory, working on exoplanet and solar-flare machine-learning workflows.</p>
-            </div>
-          </article>
-
-          <a class="scroll-pill" href="#accomplishments">
-            Scroll through my work
-            <span aria-hidden="true">↓</span>
-          </a>
-        </aside>
-      </section>
-
-      <section class="section" id="accomplishments">
-        <div class="section-heading">
-          <h2>Selected accomplishments</h2>
-          <p>Research, scholarships, presentations, and leadership that shaped the direction of my work.</p>
-        </div>
-
-        <div class="cards accomplishment-grid">
-          <article class="accomplishment-card">
-            <span class="card-kicker">International research</span>
-            <h3>ThinkSwiss Research Scholar</h3>
-            <p>Awarded $7,000 to conduct movement-biomechanics research at ETH Zürich in Summer 2026.</p>
-          </article>
-
-          <article class="accomplishment-card">
-            <span class="card-kicker">NASA-funded research</span>
-            <h3>NASA / USRA Research Award</h3>
-            <p>Awarded approximately $10,000 for undergraduate research in Spring 2025.</p>
-          </article>
-
-          <article class="accomplishment-card">
-            <span class="card-kicker">Research presentation</span>
-            <h3>3rd Place · Undergraduate Symposium</h3>
-            <p>Placed third for a 12-minute oral presentation on vibrational circular dichroism research.</p>
-          </article>
-
-          <article class="accomplishment-card">
-            <span class="card-kicker">Leadership</span>
-            <h3>Founder & President of SWiR</h3>
-            <p>Founded the Society of Women in Research to connect students with research opportunities and funding resources.</p>
-          </article>
-        </div>
-
-        <p class="accomplishments-note">
-          I have worked in university labs, NASA research groups, and an international biomechanics lab,
-          while keeping the same core interest: using engineering to make complex data easier to understand,
-          validate, and use.
-        </p>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <h2>Selected projects</h2>
-          <p>Use the arrows or swipe horizontally. Each card links to a longer project description.</p>
-        </div>
-
-        <div class="project-slider">
-          <div class="project-track" data-project-track>
-            <article class="project-card">
-              <div class="photo-slot project-photo" style="--photo: url('assets/photos/exoplanet.jpg');">
-                <div class="photo-slot-label"><strong>Exoplanet photo / figure</strong><span>assets/photos/exoplanet.jpg</span></div>
-              </div>
-              <div class="project-card-content">
-                <h3>Exoplanet Transit Anomaly Detection</h3>
-                <p>1D convolutional neural network for identifying anomalous transit signals in noisy light-curve data at NASA JPL.</p>
-                <a href="projects.html#exoplanet">View project →</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="photo-slot project-photo" style="--photo: url('assets/photos/gait.jpg');">
-                <div class="photo-slot-label"><strong>ETH / gait photo</strong><span>assets/photos/gait.jpg</span></div>
-              </div>
-              <div class="project-card-content">
-                <h3>Foot Placement and Gait Stability</h3>
-                <p>MATLAB modeling pipeline using wearable IMU data to estimate foot placement and evaluate gait stability.</p>
-                <a href="projects.html#foot-placement">View project →</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="photo-slot project-photo" style="--photo: url('assets/photos/heliophysics.jpg');">
-                <div class="photo-slot-label"><strong>Heliophysics figure</strong><span>assets/photos/heliophysics.jpg</span></div>
-              </div>
-              <div class="project-card-content">
-                <h3>Exospheric Lyman-alpha Mapping</h3>
-                <p>28-layer residual neural network for modeling H-Lyman-alpha emission patterns for future exospheric mapping.</p>
-                <a href="projects.html#heliophysics">View project →</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="photo-slot project-photo" style="--photo: url('assets/photos/vcd.jpg');">
-                <div class="photo-slot-label"><strong>VCD lab photo</strong><span>assets/photos/vcd.jpg</span></div>
-              </div>
-              <div class="project-card-content">
-                <h3>VCD Spectroscopy Research</h3>
-                <p>Biomedical spectroscopy research, technical figures, literature work, and optical-system research.</p>
-                <a href="projects.html#vcd">View project →</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="photo-slot project-photo" style="--photo: url('assets/photos/lidar.jpg');">
-                <div class="photo-slot-label"><strong>LiDAR rover photo</strong><span>assets/photos/lidar.jpg</span></div>
-              </div>
-              <div class="project-card-content">
-                <h3>LiDAR Mapping Rover</h3>
-                <p>2D environmental mapping on a LattePanda using Ubuntu, ROS, RViz, and LiDAR.</p>
-                <a href="projects.html#lidar">View project →</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="slider-controls">
-            <button class="slider-button" data-slider-previous aria-label="Previous project">←</button>
-            <button class="slider-button" data-slider-next aria-label="Next project">→</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="timeline">
-        <div class="section-heading">
-          <h2>Journey so far</h2>
-          <p>A research timeline from early spectroscopy work through current NASA JPL research.</p>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🧪</span><span class="timeline-title">Phal Lab Research</span><span class="timeline-subtitle">VCD spectroscopy, lab website, and LiDAR mapping</span></div><div class="timeline-line"></div><div class="timeline-date">Oct 2023 — Oct 2025</div></div>
-          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🏆</span><span class="timeline-title">Undergraduate Research Symposium</span><span class="timeline-subtitle">Third-place oral presentation</span></div><div class="timeline-line"></div><div class="timeline-date">Apr 2024</div></div>
-          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🛰️</span><span class="timeline-title">LiDAR Mapping Rover</span><span class="timeline-subtitle">ROS, RViz, Ubuntu, and mobile mapping</span></div><div class="timeline-line"></div><div class="timeline-date">Summer 2024</div></div>
-          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">☀️</span><span class="timeline-title">NASA Goddard Research</span><span class="timeline-subtitle">Exospheric H-Lyman-alpha modeling with a 28-layer ResNet</span></div><div class="timeline-line"></div><div class="timeline-date">Mar 2025 — Feb 2026</div></div>
-          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🎤</span><span class="timeline-title">AGU 2025</span><span class="timeline-subtitle">Presented heliophysics machine-learning research</span></div><div class="timeline-line"></div><div class="timeline-date">Dec 2025</div></div>
-          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🔭</span><span class="timeline-title">NASA JPL Research</span><span class="timeline-subtitle">Exoplanet anomaly detection and solar-flare error categorization</span></div><div class="timeline-line"></div><div class="timeline-date">Feb 2026 — Now<span class="current-dot"></span></div></div>
-          <div class="timeline-row"><div class="timeline-content"><span class="timeline-icon">🇨🇭</span><span class="timeline-title">ETH Zürich Research</span><span class="timeline-subtitle">Wearable IMUs, foot placement, and gait stability</span></div><div class="timeline-line"></div><div class="timeline-date">May — Aug 2026</div></div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <span>© 2026 Roya Akrami</span>
-      <div class="footer-links">
-        <a href="mailto:roya_akrami@mines.edu">Email</a>
-        <a href="cv.html">CV</a>
-        <a href="https://github.com/YOUR-USERNAME">GitHub</a>
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
-      </div>
-    </footer>
-  </div>
-  <script src="script.js"></script>
+    <div class="home-caption">
+      Electrical engineering · research · machine learning · scientific computing
+    </div>
+  </main>
 </body>
 </html>
