@@ -5,50 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About | Roya Akrami</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <div class="site">
-    <header class="site-header">
-      <a class="logo-dots" href="index.html" aria-label="Roya Akrami home"><span></span><span></span><span></span><span></span><span></span></a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="about.html" aria-current="page">About</a><a href="projects.html">Projects</a><a href="awards.html">Awards</a><a href="cv.html">CV</a><a class="contact-link" href="mailto:roya_akrami@mines.edu">Get in touch</a>
-      </nav>
+<body class="section-page page-about" data-page="about">
+  <div class="page-layout">
+    <header class="section-orbit" aria-label="About page heading">
+      <div class="bubble active-page-bubble bubble-lavender-light"><span>about</span></div>
     </header>
 
-    <main>
-      <section class="page-hero">
-        <p class="eyebrow">Research · Engineering · Scientific computing</p>
-        <h1>About</h1>
-        <p>A little more about my background, research path, and the kinds of technical questions I like working on.</p>
-      </section>
+    <nav class="side-nav" aria-label="Portfolio sections">
+      <a class="bubble bubble-link side-bubble bubble-sage" href="cv.html"><span>cv</span></a>
+      <a class="bubble bubble-link side-bubble bubble-lavender-light" href="awards.html"><span>awards</span></a>
+      <a class="bubble bubble-link side-bubble bubble-sage" href="projects.html"><span>projects</span></a>
+      <a class="bubble bubble-link side-bubble bubble-lavender-light" href="index.html"><span>home</span></a>
+    </nav>
 
-      <section class="content-section two-column-content">
-        <div class="content-box">
-          <h2>Background</h2>
-          <p>I am an electrical engineering student at the Colorado School of Mines, graduating in May 2027. My work has included machine learning, signal processing, biomechanics, spectroscopy, robotics, embedded systems, heliophysics, and exoplanet research.</p>
-
-          <h2>Current work</h2>
-          <p>I am currently a Research Assistant at NASA Jet Propulsion Laboratory. My work includes a 1D convolutional neural network for detecting anomalous exoplanet transit signals in noisy light-curve data, along with software that identifies and categorizes solar-flare detection errors within the Excalibur pipeline.</p>
-
-          <h2>Recent international research</h2>
-          <p>From May through August 2026, I conducted research at ETH Zürich's Laboratory for Movement Biomechanics. I developed a MATLAB-based modeling pipeline using wearable IMU data to estimate foot placement and evaluate gait stability.</p>
-
-          <h2>Earlier NASA research</h2>
-          <p>At NASA Goddard Space Flight Center, I processed H-Lyman-alpha intensity data in JupyterHub and MATLAB and used a 28-layer residual neural network to model emission patterns for exospheric mapping research.</p>
-
-          <h2>What connects the projects</h2>
-          <p>I am most interested in research where engineering tools can make complex scientific data easier to understand, validate, and use. I especially enjoy projects that sit between physical systems and data-driven modeling.</p>
+    <main class="scroll-content about-content">
+      <section class="about-intro content-block">
+        <div class="round-photo profile-photo" style="--photo:url('assets/photos/profile.jpg')">
+          <span class="photo-hint">circular photo<br>assets/photos/profile.jpg</span>
         </div>
-
-        <aside class="photo-stack">
-          <div class="photo-slot about-photo tall" style="--photo: url('assets/photos/about-research.jpg');"><div class="photo-slot-label"><strong>Research photo</strong><span>assets/photos/about-research.jpg</span></div></div>
-          <div class="photo-slot about-photo" style="--photo: url('assets/photos/about-presentation.jpg');"><div class="photo-slot-label"><strong>Presentation / conference</strong><span>assets/photos/about-presentation.jpg</span></div></div>
-          <div class="photo-slot about-photo" style="--photo: url('assets/photos/about-lab.jpg');"><div class="photo-slot-label"><strong>Lab / project photo</strong><span>assets/photos/about-lab.jpg</span></div></div>
-        </aside>
+        <div class="intro-copy">
+          <p class="kicker">Electrical Engineering · Colorado School of Mines · Class of 2027</p>
+          <h1>I like working on technical problems where physical systems meet data.</h1>
+          <p>I am an electrical engineering student whose research has moved through machine learning, signal processing, biomechanics, spectroscopy, robotics, embedded systems, heliophysics, and exoplanet science.</p>
+        </div>
       </section>
-    </main>
 
-    <footer class="site-footer"><span>© 2026 Roya Akrami</span><div class="footer-links"><a href="mailto:roya_akrami@mines.edu">Email</a><a href="cv.html">CV</a><a href="https://github.com/YOUR-USERNAME">GitHub</a><a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a></div></footer>
+      <section class="content-block text-section">
+        <span class="section-number">01</span>
+        <div>
+          <h2>What I am working on now</h2>
+          <p>I am currently a Research Assistant at NASA Jet Propulsion Laboratory. My work includes a 1D convolutional neural network for detecting anomalous exoplanet transit signals in noisy light-curve data, along with software that identifies and categorizes solar-flare detection errors within the Excalibur pipeline.</p>
+        </div>
+      </section>
+
+      <section class="content-block split-section">
+        <div>
+          <span class="section-number">02</span>
+          <h2>Research across different fields</h2>
+          <p>From May through August 2026, I conducted movement-biomechanics research at ETH Zürich, developing a MATLAB-based modeling pipeline that uses wearable IMU data to estimate foot placement and evaluate gait stability.</p>
+          <p>Before that, at NASA Goddard Space Flight Center, I processed H-Lyman-alpha intensity data using JupyterHub and MATLAB and worked with a 28-layer residual neural network to model emission patterns for exospheric mapping research.</p>
+        </div>
+        <div class="round-photo medium-photo bubble-sage" style="--photo:url('assets/photos/about-research.jpg')">
+          <span class="photo-hint">research photo<br>about-research.jpg</span>
+        </div>
+      </section>
+
+      <section class="content-block split-section reverse">
+        <div class="round-photo medium-photo bubble-lavender-light" style="--photo:url('assets/photos/about-presentation.jpg')">
+          <span class="photo-hint">presentation photo<br>about-presentation.jpg</span>
+        </div>
+        <div>
+          <span class="section-number">03</span>
+          <h2>What connects it all</h2>
+          <p>I am most interested in research where engineering tools can make complex scientific data easier to understand, validate, and use. I especially like projects that combine a real physical system with data-driven modeling.</p>
+        </div>
+      </section>
+
+      <footer class="minimal-footer">
+        <a href="mailto:roya_akrami@mines.edu">roya_akrami@mines.edu</a>
+        <span>© 2026 Roya Akrami</span>
+      </footer>
+    </main>
   </div>
 </body>
 </html>
