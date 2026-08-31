@@ -3,56 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Awards | Roya Akrami</title>
+  <title>CV | Roya Akrami</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-<body class="section-page page-awards" data-page="awards">
+<body class="section-page page-cv" data-page="cv">
   <div class="page-layout">
     <header class="section-orbit">
-      <div class="bubble active-page-bubble bubble-lavender-light"><span>awards</span></div>
+      <a class="bubble bubble-link active-page-bubble bubble-lavender-light" href="assets/roya-akrami-cv.pdf" target="_blank" rel="noopener" aria-label="Open PDF CV"><span>cv</span></a>
+      <p class="orbit-note">click the big CV bubble for the PDF</p>
     </header>
 
     <nav class="side-nav" aria-label="Portfolio sections">
-      <a class="bubble bubble-link side-bubble bubble-sage" href="cv.html"><span>cv</span></a>
-      <a class="bubble bubble-link side-bubble bubble-lavender-light" href="about.html"><span>about</span></a>
       <a class="bubble bubble-link side-bubble bubble-sage" href="projects.html"><span>projects</span></a>
+      <a class="bubble bubble-link side-bubble bubble-lavender-light" href="awards.html"><span>awards</span></a>
+      <a class="bubble bubble-link side-bubble bubble-sage" href="about.html"><span>about</span></a>
       <a class="bubble bubble-link side-bubble bubble-lavender-light" href="index.html"><span>home</span></a>
     </nav>
 
-    <main class="scroll-content list-page-content">
+    <main class="scroll-content cv-content">
       <section class="page-copy content-block">
-        <p class="kicker">Scholarships · recognition · leadership</p>
-        <h1>Awards and research support</h1>
-        <p>Scroll through the awards and research opportunities that have supported my work.</p>
+        <p class="kicker">Roya Akrami · Electrical Engineering</p>
+        <h1>Curriculum vitae</h1>
+        <div class="cv-actions"><a href="assets/roya-akrami-cv.pdf" target="_blank" rel="noopener">Preview PDF ↗</a><a href="assets/roya-akrami-cv.pdf" download>Download PDF ↓</a></div>
       </section>
 
-      <section class="award-list content-block" aria-label="Awards list">
-        <article class="award-item"><span class="award-year">2026</span><div><h2>ThinkSwiss Scholarship</h2><p>Awarded $7,000 to conduct research overseas at ETH Zürich in Switzerland.</p><span>February 2026</span></div></article>
-        <article class="award-item"><span class="award-year">2025</span><div><h2>Colorado School of Mines Travel Grant</h2><p>Awarded $400 for travel expenses to attend the American Geophysical Union conference and present exospheric machine-learning research conducted at NASA Goddard.</p><span>December 2025</span></div></article>
-        <article class="award-item"><span class="award-year">2025</span><div><h2>NASA & Universities Space Research Association</h2><p>Awarded an approximately $10,000 undergraduate research stipend to conduct NASA-funded research.</p><span>Spring 2025</span></div></article>
-        <article class="award-item"><span class="award-year">2025</span><div><h2>Students Transforming Through Research Conference</h2><p>Funded to attend a research policymaking conference in Washington, D.C. and represent Mines as an Undergraduate Research Ambassador.</p><span>Spring 2025</span></div></article>
-        <article class="award-item"><span class="award-year">2024</span><div><h2>Summer Undergraduate Research Fellowship</h2><p>$4,000 stipend to conduct faculty-mentored summer research through Colorado School of Mines.</p><span>June — August 2024</span></div></article>
-        <article class="award-item"><span class="award-year">2024</span><div><h2>3rd Place · Spring Undergraduate Research Symposium</h2><p>Presented a 12-minute presentation on vibrational circular dichroism designs and placed third among presenters.</p><span>April 2024</span></div></article>
-        <article class="award-item"><span class="award-year">2023</span><div><h2>First-Year Innovation & Research Scholar Training</h2><p>$1,000 stipend to work in a research lab.</p><span>August 2023 — May 2024</span></div></article>
-        <article class="award-item"><span class="award-year">2023</span><div><h2>The Provost Award</h2><p>$10,000-per-year scholarship granted by Colorado School of Mines.</p><span>August 2023 — May 2027</span></div></article>
+      <section class="cv-section content-block">
+        <div class="cv-label">Education</div>
+        <div class="cv-body"><article><div class="cv-heading"><h2>Colorado School of Mines</h2><span>Graduating May 2027</span></div><p>Bachelor of Science, Electrical Engineering</p><p>Hardware-integration work using Verilog, C, MPLAB X IDE, custom PCBs, FPGA Lite systems, Arduinos, Raspberry Pis, and oscilloscopes for signal analysis and embedded control.</p></article></div>
       </section>
 
-      <section class="award-photo-row content-block">
-        <div class="round-photo award-photo bubble-sage" style="--photo:url('assets/photos/award-agu.jpg')"><span class="photo-hint">AGU / poster<br>award-agu.jpg</span></div>
-        <div class="round-photo award-photo bubble-lavender-light" style="--photo:url('assets/photos/award-dc.jpg')"><span class="photo-hint">Washington, D.C.<br>award-dc.jpg</span></div>
-        <div class="round-photo award-photo bubble-sage" style="--photo:url('assets/photos/award-eth.jpg')"><span class="photo-hint">ThinkSwiss / ETH<br>award-eth.jpg</span></div>
-      </section>
-
-      <section class="content-block leadership-bubble-section">
-        <div class="leadership-bubble bubble-lavender-light"><span>leadership</span></div>
-        <div class="leadership-copy">
-          <article><p class="project-meta">Feb 2025 — Present</p><h2>Founder & President · Society of Women in Research</h2><p>Founded and led the only organization at Colorado School of Mines dedicated to closing the gender gap in research participation. Organized weekly meetings, cold-email workshops, and scholarship information sessions to connect students with research opportunities.</p></article>
-          <article><p class="project-meta">Aug 2024 — Present</p><h2>Undergraduate Research Ambassador</h2><p>Represented Colorado School of Mines in research outreach and policy advocacy, including Washington, D.C. meetings, student presentations, email mentorship, and articles highlighting student research initiatives.</p></article>
+      <section class="cv-section content-block">
+        <div class="cv-label">Research Experience</div>
+        <div class="cv-body">
+          <article><div class="cv-heading"><h2>NASA Jet Propulsion Laboratory</h2><span>Feb 2026 — Present</span></div><p class="role">Research Assistant</p><ul><li>Developed and trained a 1D convolutional neural network to identify anomalous exoplanet transit signals in noisy light-curve data.</li><li>Contributed to software that identifies and categorizes solar-flare detection errors within the Excalibur pipeline.</li></ul></article>
+          <article><div class="cv-heading"><h2>ETH Zürich · Laboratory for Movement Biomechanics</h2><span>May — Aug 2026</span></div><p class="role">Research Assistant</p><ul><li>Developed a MATLAB-based modeling pipeline that uses wearable IMU data to estimate foot placement and evaluate gait stability.</li></ul></article>
+          <article><div class="cv-heading"><h2>NASA Goddard Space Flight Center</h2><span>Mar 2025 — Feb 2026</span></div><p class="role">Research Assistant</p><ul><li>Research paper in process of development on extracting and analyzing H-Lyman-alpha emissions in Earth's exosphere to advance exospheric mapping methods for the Carruthers Geocorona Observatory.</li><li>Processed H-Lyman-alpha intensity data in JupyterHub and MATLAB through a 28-layer residual neural network to model and predict future emission patterns.</li></ul></article>
+          <article><div class="cv-heading"><h2>Phal Lab · Colorado School of Mines</h2><span>Oct 2023 — Oct 2025</span></div><p class="role">Research Assistant</p><ul><li>Designed figures, wrote annotations, and gathered references for work discussing vibrational circular dichroism detection of Alzheimer's biomarkers.</li><li>Updated lab website design and content using SCSS, HTML, and Ruby.</li><li>Designed and implemented a 2D LiDAR-based mapping system on a LattePanda computer using Ubuntu and ROS RViz.</li></ul></article>
         </div>
       </section>
 
-      <footer class="minimal-footer"><a href="mailto:roya_akrami@mines.edu">roya_akrami@mines.edu</a><span>© 2026 Roya Akrami</span></footer>
+      <section class="cv-section content-block">
+        <div class="cv-label">Key Accomplishments</div>
+        <div class="cv-body compact-list">
+          <article><h2>Exospheric Hydrogen Mapping · NASA Internship</h2><p>Processed H-Lyman-alpha data with MATLAB and a 28-layer ResNet; paper in process of development for exospheric mapping research.</p></article>
+          <article><h2>American Geophysical Union Conference 2025</h2><p>Presented “Development of a Regression Model of Exospheric Lyman-Alpha Emission Using Neural Networks.”</p></article>
+          <article><h2>VCD Spectroscopy Research</h2><p>Contributed figures and annotated references to a VCD literature review and the corresponding article, “Rapid Vibrational Circular Dichroism Spectroscopy via Synchronized Photoelastic Modulator–Quantum Cascade Laser Integration.”</p></article>
+          <article><h2>Research Advocacy in Washington, D.C.</h2><p>Represented Colorado School of Mines as part of the Council on Undergraduate Research advocacy program and met with U.S. Senators to advocate for federal research funding.</p></article>
+        </div>
+      </section>
+
+      <section class="cv-section content-block">
+        <div class="cv-label">Honors & Awards</div>
+        <div class="cv-body cv-awards-grid">
+          <article><h2>ThinkSwiss Scholarship</h2><p>$7,000 · Feb 2026</p></article>
+          <article><h2>Travel Grant</h2><p>$400 · Dec 2025</p></article>
+          <article><h2>NASA / USRA Research Stipend</h2><p>~$10,000 · Spring 2025</p></article>
+          <article><h2>STR Conference Funding</h2><p>Spring 2025</p></article>
+          <article><h2>Summer Undergraduate Research Fellowship</h2><p>$4,000 · Summer 2024</p></article>
+          <article><h2>3rd Place · Undergraduate Research Symposium</h2><p>Apr 2024</p></article>
+          <article><h2>First-Year Innovation & Research Scholar Training</h2><p>$1,000 · 2023–2024</p></article>
+          <article><h2>The Provost Award</h2><p>$10,000/year · 2023–2027</p></article>
+        </div>
+      </section>
+
+      <section class="cv-section content-block">
+        <div class="cv-label">Leadership</div>
+        <div class="cv-body">
+          <article><div class="cv-heading"><h2>Society of Women in Research</h2><span>Feb 2025 — Present</span></div><p class="role">Founder and President</p><p>Founded and led an organization dedicated to closing the gender gap in research participation; organized meetings, cold-email workshops, scholarship information sessions, and outreach.</p></article>
+          <article><div class="cv-heading"><h2>Undergraduate Research Ambassador</h2><span>Aug 2024 — Present</span></div><p>Represented Colorado School of Mines in research outreach and policy advocacy and provided mentorship through presentations, email outreach, and articles.</p></article>
+        </div>
+      </section>
+
+      <section class="cv-section content-block">
+        <div class="cv-label">Skills</div>
+        <div class="cv-body"><p class="skill-cloud">C2-level French · C++ · Python · MATLAB · JupyterHub · MPLAB X IDE · Inkscape · Excel · LaTeX · Verilog</p></div>
+      </section>
+
+      <section class="cv-section content-block">
+        <div class="cv-label">Contact</div>
+        <div class="cv-body contact-lines"><a href="mailto:roya_akrami@mines.edu">roya_akrami@mines.edu</a><a href="mailto:royasakrami7@gmail.com">royasakrami7@gmail.com</a><span>Golden, Colorado, United States</span></div>
+      </section>
+
+      <footer class="minimal-footer"><a href="assets/roya-akrami-cv.pdf" target="_blank" rel="noopener">PDF CV ↗</a><span>© 2026 Roya Akrami</span></footer>
     </main>
   </div>
 </body>
