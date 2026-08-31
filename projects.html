@@ -5,58 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects | Roya Akrami</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-  <div class="site">
-    <header class="site-header">
-      <a class="logo-dots" href="index.html" aria-label="Roya Akrami home"><span></span><span></span><span></span><span></span><span></span></a>
-      <nav class="nav" aria-label="Main navigation"><a href="about.html">About</a><a href="projects.html" aria-current="page">Projects</a><a href="awards.html">Awards</a><a href="cv.html">CV</a><a class="contact-link" href="mailto:roya_akrami@mines.edu">Get in touch</a></nav>
+<body class="section-page page-projects" data-page="projects">
+  <div class="page-layout">
+    <header class="section-orbit">
+      <div class="bubble active-page-bubble bubble-lavender-light"><span>projects</span></div>
     </header>
 
-    <main>
-      <section class="page-hero"><p class="eyebrow">Selected research and engineering work</p><h1>Projects</h1><p>Machine learning, scientific computing, sensing, robotics, and signal analysis across space science and biomechanics.</p></section>
+    <nav class="side-nav" aria-label="Portfolio sections">
+      <a class="bubble bubble-link side-bubble bubble-sage" href="cv.html"><span>cv</span></a>
+      <a class="bubble bubble-link side-bubble bubble-lavender-light" href="awards.html"><span>awards</span></a>
+      <a class="bubble bubble-link side-bubble bubble-sage" href="about.html"><span>about</span></a>
+      <a class="bubble bubble-link side-bubble bubble-lavender-light" href="index.html"><span>home</span></a>
+    </nav>
 
-      <section class="content-section">
-        <div class="project-list">
-          <article class="project-entry" id="exoplanet">
-            <div class="photo-slot project-entry-photo" style="--photo: url('assets/photos/exoplanet.jpg');"><div class="photo-slot-label"><strong>Exoplanet plot / JPL photo</strong><span>assets/photos/exoplanet.jpg</span></div></div>
-            <div class="project-entry-copy"><span class="project-org">NASA Jet Propulsion Laboratory · Feb 2026 — Present</span><h2>Exoplanet Transit Anomaly Detection</h2><p>Developed and trained a 1D convolutional neural network to identify anomalous exoplanet transit signals in noisy light-curve data.</p><p><strong>Tools:</strong> Python, 1D CNNs, light-curve analysis, scientific machine learning</p></div>
-          </article>
-
-          <article class="project-entry" id="solar-flare">
-            <div class="photo-slot project-entry-photo" style="--photo: url('assets/photos/solar-flare.jpg');"><div class="photo-slot-label"><strong>Solar-flare figure</strong><span>assets/photos/solar-flare.jpg</span></div></div>
-            <div class="project-entry-copy"><span class="project-org">NASA Jet Propulsion Laboratory · 2026</span><h2>Solar-Flare Detection Error Categorization</h2><p>Contributed to software that identifies and categorizes solar-flare detection errors within the Excalibur pipeline.</p><p><strong>Tools:</strong> Python, data analysis, validation workflows</p></div>
-          </article>
-
-          <article class="project-entry" id="foot-placement">
-            <div class="photo-slot project-entry-photo" style="--photo: url('assets/photos/gait.jpg');"><div class="photo-slot-label"><strong>ETH / gait photo</strong><span>assets/photos/gait.jpg</span></div></div>
-            <div class="project-entry-copy"><span class="project-org">ETH Zürich · Laboratory for Movement Biomechanics · May — Aug 2026</span><h2>Foot Placement and Gait Stability</h2><p>Developed a MATLAB-based modeling pipeline that uses wearable IMU data to estimate foot placement and evaluate gait stability.</p><p><strong>Tools:</strong> MATLAB, wearable IMUs, biomechanics, signal processing</p></div>
-          </article>
-
-          <article class="project-entry" id="heliophysics">
-            <div class="photo-slot project-entry-photo" style="--photo: url('assets/photos/heliophysics.jpg');"><div class="photo-slot-label"><strong>H-Lyman-alpha figure</strong><span>assets/photos/heliophysics.jpg</span></div></div>
-            <div class="project-entry-copy"><span class="project-org">NASA Goddard Space Flight Center · Mar 2025 — Feb 2026</span><h2>Exospheric H-Lyman-alpha Mapping</h2><p>Processed H-Lyman-alpha intensity data in JupyterHub and MATLAB through a 28-layer residual neural network to model and predict emission patterns for exospheric mapping research.</p><p><strong>Tools:</strong> Python, MATLAB, JupyterHub, ResNet, NASA datasets</p></div>
-          </article>
-
-          <article class="project-entry" id="vcd">
-            <div class="photo-slot project-entry-photo" style="--photo: url('assets/photos/vcd.jpg');"><div class="photo-slot-label"><strong>VCD setup / poster</strong><span>assets/photos/vcd.jpg</span></div></div>
-            <div class="project-entry-copy"><span class="project-org">Phal Lab · Colorado School of Mines · Oct 2023 — Oct 2025</span><h2>Vibrational Circular Dichroism Spectroscopy</h2><p>Designed figures, wrote annotations, and gathered references for work on vibrational circular dichroism detection of Alzheimer's biomarkers, contributing to a paper in development and a published article.</p><p><strong>Tools:</strong> spectroscopy, scientific communication, technical figures, literature research</p></div>
-          </article>
-
-          <article class="project-entry" id="lidar">
-            <div class="photo-slot project-entry-photo" style="--photo: url('assets/photos/lidar.jpg');"><div class="photo-slot-label"><strong>LiDAR rover photo</strong><span>assets/photos/lidar.jpg</span></div></div>
-            <div class="project-entry-copy"><span class="project-org">Colorado School of Mines · Summer 2024</span><h2>LiDAR Mapping Rover</h2><p>Designed and implemented a 2D LiDAR-based mapping system on a LattePanda computer using Ubuntu and ROS RViz for real-time visualization and spatial mapping.</p><p><strong>Tools:</strong> ROS, RViz, Ubuntu, LiDAR, LattePanda</p></div>
-          </article>
-
-          <article class="project-entry" id="embedded">
-            <div class="photo-slot project-entry-photo" style="--photo: url('assets/photos/embedded.jpg');"><div class="photo-slot-label"><strong>PCB / hardware photo</strong><span>assets/photos/embedded.jpg</span></div></div>
-            <div class="project-entry-copy"><span class="project-org">Colorado School of Mines</span><h2>Embedded Systems & Hardware Integration</h2><p>Conducted hardware-integration work using Verilog, C, MPLAB X, custom PCBs, FPGA Lite systems, Arduinos, Raspberry Pis, and oscilloscopes for signal analysis and embedded control.</p><p><strong>Tools:</strong> Verilog, C/C++, MPLAB X, FPGA, Arduino, Raspberry Pi, oscilloscopes</p></div>
-          </article>
-        </div>
+    <main class="scroll-content list-page-content">
+      <section class="page-copy content-block">
+        <p class="kicker">Selected research + engineering work</p>
+        <h1>Projects I have worked on</h1>
+        <p>Scroll through the projects below. The photo circles are intentionally left as drop-in spaces for figures, lab photos, posters, or screenshots.</p>
       </section>
-    </main>
 
-    <footer class="site-footer"><span>© 2026 Roya Akrami</span><div class="footer-links"><a href="mailto:roya_akrami@mines.edu">Email</a><a href="cv.html">CV</a><a href="https://github.com/YOUR-USERNAME">GitHub</a><a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a></div></footer>
+      <section class="project-story content-block" id="exoplanet">
+        <div class="round-photo project-circle bubble-sage" style="--photo:url('assets/photos/exoplanet.jpg')"><span class="photo-hint">exoplanet figure<br>exoplanet.jpg</span></div>
+        <div class="story-copy"><p class="project-meta">NASA Jet Propulsion Laboratory · Feb 2026 — Present</p><h2>Exoplanet Transit Anomaly Detection</h2><p>Developed and trained a 1D convolutional neural network to identify anomalous exoplanet transit signals in noisy light-curve data.</p><p class="tools">Python · 1D CNNs · light-curve analysis · scientific machine learning</p></div>
+      </section>
+
+      <section class="project-story content-block flip" id="solar-flare">
+        <div class="round-photo project-circle bubble-lavender-light" style="--photo:url('assets/photos/solar-flare.jpg')"><span class="photo-hint">solar flare figure<br>solar-flare.jpg</span></div>
+        <div class="story-copy"><p class="project-meta">NASA Jet Propulsion Laboratory · 2026</p><h2>Solar-Flare Detection Error Categorization</h2><p>Contributed to software that identifies and categorizes solar-flare detection errors within the Excalibur pipeline.</p><p class="tools">Python · data analysis · validation workflows</p></div>
+      </section>
+
+      <section class="project-story content-block" id="gait">
+        <div class="round-photo project-circle bubble-sage" style="--photo:url('assets/photos/gait.jpg')"><span class="photo-hint">ETH / gait photo<br>gait.jpg</span></div>
+        <div class="story-copy"><p class="project-meta">ETH Zürich · May — Aug 2026</p><h2>Foot Placement and Gait Stability</h2><p>Developed a MATLAB-based modeling pipeline that uses wearable IMU data to estimate foot placement and evaluate gait stability.</p><p class="tools">MATLAB · wearable IMUs · biomechanics · signal processing</p></div>
+      </section>
+
+      <section class="project-story content-block flip" id="heliophysics">
+        <div class="round-photo project-circle bubble-lavender-light" style="--photo:url('assets/photos/heliophysics.jpg')"><span class="photo-hint">H-Lyman-alpha figure<br>heliophysics.jpg</span></div>
+        <div class="story-copy"><p class="project-meta">NASA Goddard Space Flight Center · Mar 2025 — Feb 2026</p><h2>Exospheric H-Lyman-alpha Mapping</h2><p>Processed H-Lyman-alpha intensity data in JupyterHub and MATLAB through a 28-layer residual neural network to model and predict emission patterns for exospheric mapping research.</p><p class="tools">Python · MATLAB · JupyterHub · ResNet · NASA datasets</p></div>
+      </section>
+
+      <section class="project-story content-block" id="vcd">
+        <div class="round-photo project-circle bubble-sage" style="--photo:url('assets/photos/vcd.jpg')"><span class="photo-hint">VCD lab / poster<br>vcd.jpg</span></div>
+        <div class="story-copy"><p class="project-meta">Phal Lab · Colorado School of Mines · Oct 2023 — Oct 2025</p><h2>Vibrational Circular Dichroism Spectroscopy</h2><p>Designed figures, wrote annotations, and gathered references for work on vibrational circular dichroism detection of Alzheimer's biomarkers, contributing to a paper in development and a published article.</p><p class="tools">Spectroscopy · scientific communication · technical figures · literature research</p></div>
+      </section>
+
+      <section class="project-story content-block flip" id="lidar">
+        <div class="round-photo project-circle bubble-lavender-light" style="--photo:url('assets/photos/lidar.jpg')"><span class="photo-hint">LiDAR rover photo<br>lidar.jpg</span></div>
+        <div class="story-copy"><p class="project-meta">Colorado School of Mines · Summer 2024</p><h2>LiDAR Mapping Rover</h2><p>Designed and implemented a 2D LiDAR-based mapping system on a LattePanda computer using Ubuntu and ROS RViz for real-time visualization and spatial mapping.</p><p class="tools">ROS · RViz · Ubuntu · LiDAR · LattePanda</p></div>
+      </section>
+
+      <section class="project-story content-block" id="embedded">
+        <div class="round-photo project-circle bubble-sage" style="--photo:url('assets/photos/embedded.jpg')"><span class="photo-hint">hardware / PCB photo<br>embedded.jpg</span></div>
+        <div class="story-copy"><p class="project-meta">Colorado School of Mines</p><h2>Embedded Systems & Hardware Integration</h2><p>Conducted hardware-integration work using Verilog, C, MPLAB X, custom PCBs, FPGA Lite systems, Arduinos, Raspberry Pis, and oscilloscopes for signal analysis and embedded control.</p><p class="tools">Verilog · C/C++ · MPLAB X · FPGA · Arduino · Raspberry Pi</p></div>
+      </section>
+
+      <footer class="minimal-footer"><a href="mailto:roya_akrami@mines.edu">roya_akrami@mines.edu</a><span>© 2026 Roya Akrami</span></footer>
+    </main>
   </div>
 </body>
 </html>
