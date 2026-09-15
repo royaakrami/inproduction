@@ -219,3 +219,75 @@ body.is-transitioning .transition-bubble span { opacity: 0; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 .page-entry-wash { position: fixed; inset: 0; z-index: 9998; pointer-events: none; }
+
+
+/* give the floating bubbles enough space */
+.home-page {
+  overflow: auto;
+}
+
+.bubble-home {
+  --nav-size: min(18vw, 245px);
+  --name-size: min(34vw, 500px);
+
+  display: grid;
+  grid-template-columns: var(--nav-size) var(--name-size) var(--nav-size);
+  grid-template-areas:
+    "about name projects"
+    "cv name awards"
+    "caption caption caption";
+
+  gap: 48px;
+  place-items: center;
+  place-content: center;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 40px 24px;
+}
+
+/* let the grid position the bubbles */
+.bubble-home > .bubble {
+  position: relative;
+  inset: auto;
+  transform: none;
+}
+
+.bubble-home .name-bubble {
+  grid-area: name;
+  width: var(--name-size);
+}
+
+.bubble-home .home-nav {
+  width: var(--nav-size);
+}
+
+.bubble-home .about-bubble { grid-area: about; }
+.bubble-home .projects-bubble { grid-area: projects; }
+.bubble-home .cv-bubble { grid-area: cv; }
+.bubble-home .awards-bubble { grid-area: awards; }
+
+.bubble-home .home-caption {
+  grid-area: caption;
+  position: static;
+  transform: none;
+  width: 100%;
+}
+
+/* smaller screens: put the name between two rows of links */
+@media (max-width: 820px) {
+  .bubble-home {
+    --nav-size: min(30vw, 180px);
+    --name-size: min(62vw, 360px);
+
+    grid-template-columns: repeat(2, var(--nav-size));
+    grid-template-areas:
+      "about projects"
+      "name name"
+      "cv awards"
+      "caption caption";
+
+    gap: 42px;
+    padding: 32px 20px;
+  }
+}
