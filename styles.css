@@ -291,3 +291,13 @@ body.is-transitioning .transition-bubble span { opacity: 0; }
     padding: 32px 20px;
   }
 }
+
+/* remove the large top-left bubble */
+.section-orbit {
+  display: none;
+}
+
+/* reduce the space above the page content */
+.section-page .scroll-content {
+  padding-top: 70px;
+}
