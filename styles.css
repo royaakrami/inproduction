@@ -308,3 +308,115 @@ body.is-transitioning .transition-bubble span { opacity: 0; }
     right: auto;
   }
 }
+
+/* TWINKLING STARS */
+/* The stars sit above the white background and behind all the page content. */
+body { isolation: isolate; }
+.bubble-home { background: transparent; }
+
+.star-field {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.twinkle-star {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: #669bd5;
+  opacity: .3;
+  animation: star-twinkle 5s ease-in-out infinite;
+}
+
+/* A few larger, four-point stars mixed in with the little dots. */
+.twinkle-star.sparkle {
+  border-radius: 0;
+  clip-path: polygon(50% 0%, 61% 38%, 100% 50%, 61% 62%, 50% 100%, 39% 62%, 0% 50%, 39% 38%);
+}
+
+@keyframes star-twinkle {
+  0%, 100% { opacity: .15; transform: scale(.75); }
+  50% { opacity: .8; transform: scale(1.15); }
+}
+
+/* Keep the stars still when a visitor has requested less animation. */
+@media (prefers-reduced-motion: reduce) {
+  .twinkle-star {
+    animation: none !important;
+    opacity: .3;
+    transform: none;
+  }
+}
+
+/* AWARDS PAGE: use the existing award rows instead of CV sections. */
+.page-awards .scroll-content {
+  width: min(1000px, calc(100% - 280px));
+  margin-left: clamp(200px, 18vw, 280px);
+  padding-right: 0;
+}
+
+.page-awards .page-copy { margin-bottom: 48px; }
+.page-awards .award-list { border-top: 0; margin-bottom: 56px; }
+
+.page-awards .award-item {
+  grid-template-columns: 82px minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 28px;
+  padding: 32px 0;
+}
+
+.page-awards .award-item h2 {
+  font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+  line-height: 1.15;
+}
+
+.page-awards .award-kind {
+  margin: 0 0 8px;
+  color: #4d6a87;
+  font-size: .72rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.page-awards .award-date { margin-bottom: 0; font-size: .9rem; }
+
+.award-amount {
+  padding-top: 22px;
+  color: var(--ink);
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.award-amount small { font-size: .8rem; color: var(--muted); }
+
+.page-awards .award-featured {
+  margin-bottom: 8px;
+  padding: 28px;
+  border: 1px solid #d2e3f4;
+  border-radius: 24px;
+  background: rgba(230, 241, 255, .8);
+}
+
+.page-awards .award-featured .award-year { background: #fff; }
+
+@media (max-width: 1100px) {
+  .page-awards .award-item { grid-template-columns: 82px minmax(0, 1fr); }
+  .award-amount { grid-column: 2; padding-top: 0; margin-top: -12px; }
+}
+
+@media (max-width: 820px) {
+  .page-awards .scroll-content {
+    width: auto;
+    margin-left: 0;
+    padding: 56px 22px 120px;
+  }
+}
+
+@media (max-width: 560px) {
+  .page-awards .award-item { grid-template-columns: 56px minmax(0, 1fr); gap: 18px; }
+  .page-awards .award-year { width: 56px; height: 56px; font-size: .72rem; }
+  .page-awards .award-featured { padding: 20px 16px; }
+}
